@@ -1,0 +1,48 @@
+﻿<Window x:Class="AddressBook.EditorWpfApp.EditAddEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Zamestnanec" Height="280" Width="380">
+
+    <Grid Margin="10,10,0,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Zamestnanec:" Grid.Row="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="TbName" Grid.Row="0" Margin="105,0,0,26" Grid.RowSpan="2" Width="230"/>
+
+        <Label Content="Funkcia:" Grid.Row="1" VerticalAlignment="Center"/>
+        <TextBox x:Name="TbPosition" Grid.Row="1" Margin="105,5,0,0" Width="230"/>
+
+        <Label Content="Telefón:" Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBox x:Name="TbPhone" Grid.Row="2" Margin="105,5,0,0" Width="230"/>
+
+        <Label Content="E-mail:" Grid.Row="3" VerticalAlignment="Center"/>
+        <TextBox x:Name="TbEmail" Grid.Row="3" Margin="105,5,0,0" Width="230"/>
+
+        <Label Content="Miestnosť:" Grid.Row="4" VerticalAlignment="Center"/>
+        <TextBox x:Name="TbRoom" Grid.Row="4" Margin="105,5,0,0" Width="230"/>
+
+        <Label Content="Hlavné pracovisko:" Grid.Row="5" VerticalAlignment="Center"/>
+        <TextBox x:Name="TbMainWorkPlace" Grid.Row="5" Margin="105,5,0,0" Width="230"/>
+
+        <Label Content="Pracovisko:" Grid.Row="6" VerticalAlignment="Center"/>
+        <TextBox x:Name="TbWorkplace" Grid.Row="6" Margin="105,5,0,0" Width="230"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="7" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Content="OK" Width="112" Height="30" Margin="5,0,0,0" Click="Button_Okay_OnClick"/>
+            <Button Content="Zrušiť"  Width="112" Height="30" Margin="5,0,10,0" Click="Button_Cancel_OnClick"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

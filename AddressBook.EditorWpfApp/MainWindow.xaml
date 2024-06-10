@@ -1,0 +1,54 @@
+﻿<Window x:Class="AddressBook.EditorWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Adresár zamestnancov" Height="450" Width="800">
+
+
+    <!-- S týmto kódom (DockPanel, MenuItem) mi pomáhala AI -->
+    <DockPanel LastChildFill="True">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Súbor">
+                <MenuItem Header="_Nový" Click="MenuItem_OnClick_New_File"/>
+                <MenuItem Header="_Otvoriť" Click="MenuItem_OnClick_Open_Employees" />
+                <MenuItem Header="_Uložiť ako..." Click="MenuItem_OnClick_Save_File"/>
+                <Separator/>
+                <MenuItem Header="_Skončiť" Click="MenuItem_OnClick_Exit"/>
+            </MenuItem>
+
+            <MenuItem Header="_Úpravy">
+                <MenuItem Header="_Pridať..." Click="ShowAddEmployeeWindow"/>
+                <MenuItem x:Name="EditButton" Header="_Editovať..." IsEnabled="False" Click="Edit_Button_OnClick"/>
+                <MenuItem x:Name="RemoveButton" Header="_Odstrániť" IsEnabled="False" Click="Item_Remove_OnClick"/>
+            </MenuItem>
+
+            <MenuItem Header="_Pomocník">
+                <MenuItem Header="_O programe..." Click="About_OnClick"/>
+            </MenuItem>
+        </Menu>
+
+        <DockPanel LastChildFill="True" DockPanel.Dock="Top">
+            <Button Content="Pridať..." Margin="5" Height="30" Width="50" Click="ShowAddEmployeeWindow"/>
+            <Button x:Name="MainEditButton" Content="Editovať..." Margin="5" IsEnabled="False" Height="30" Width="70" Click="Edit_Button_OnClick"/>
+            <Button x:Name="MainRemoveButton" Content="Odstrániť" Margin="5" IsEnabled="False" Height="30" Width="70" Click="Item_Remove_OnClick"/>
+            <Label Content="Počet: " Margin="5,10,5,5" />
+            <Label x:Name="PocetNajdenych" Content="{Binding NumberOfEmployeesFound}" Margin="5,10,10,5" FontWeight="Bold"/>
+            <Button x:Name="SearchButton" Content="Vyhľadávať..." Margin="5,5,5,5" Height="30" Width="80" IsEnabled="False" Click="Search_Button_OnClick" HorizontalAlignment="Right" DockPanel.Dock="Right" />
+        </DockPanel>
+
+        <ListView Margin="5" Name="EmployeesList"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  SelectionChanged="EmployeesList_OnSelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Zamestnanec" Width="200" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Funkcia" Width="160" DisplayMemberBinding="{Binding Position}"/>
+                    <GridViewColumn Header="Telefón" Width="160" DisplayMemberBinding="{Binding Phone}"/>
+                    <GridViewColumn Header="E-mail" Width="180" DisplayMemberBinding="{Binding Email}"/>
+                    <GridViewColumn Header="Miestnosť" Width="80" DisplayMemberBinding="{Binding Room}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+
+</Window>

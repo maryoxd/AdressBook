@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook.CommonLibrary", "AddressBook.CommonLibrary\AddressBook.CommonLibrary.csproj", "{78E7E70E-54CE-4433-ABE8-13206A0B6818}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdressBook.ViewerConsoleApp", "AdressBook.ViewerConsoleApp\AdressBook.ViewerConsoleApp.csproj", "{06DFC9E7-4A03-4DFB-B5BE-D2A228714654}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook.ViewerWpfApp", "AddressBook.ViewerWpfApp\AddressBook.ViewerWpfApp.csproj", "{B407455B-33E9-4A93-8F52-C99CFE4F292F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook.EditorWpfApp", "AddressBook.EditorWpfApp\AddressBook.EditorWpfApp.csproj", "{77025233-3465-4B5D-997F-7600DAE446E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78E7E70E-54CE-4433-ABE8-13206A0B6818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E7E70E-54CE-4433-ABE8-13206A0B6818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E7E70E-54CE-4433-ABE8-13206A0B6818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E7E70E-54CE-4433-ABE8-13206A0B6818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06DFC9E7-4A03-4DFB-B5BE-D2A228714654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06DFC9E7-4A03-4DFB-B5BE-D2A228714654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06DFC9E7-4A03-4DFB-B5BE-D2A228714654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06DFC9E7-4A03-4DFB-B5BE-D2A228714654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B407455B-33E9-4A93-8F52-C99CFE4F292F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B407455B-33E9-4A93-8F52-C99CFE4F292F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B407455B-33E9-4A93-8F52-C99CFE4F292F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B407455B-33E9-4A93-8F52-C99CFE4F292F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77025233-3465-4B5D-997F-7600DAE446E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77025233-3465-4B5D-997F-7600DAE446E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77025233-3465-4B5D-997F-7600DAE446E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77025233-3465-4B5D-997F-7600DAE446E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A223D9E2-23D6-4C72-A9AF-8346FC93547B}
+	EndGlobalSection
+EndGlobal
